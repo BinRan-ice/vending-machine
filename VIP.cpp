@@ -1,4 +1,3 @@
-#pragma warning(disable:4996)
 #include "VIP.h"
 #include"Class.h"
 #include"watcher.h"
@@ -13,30 +12,30 @@ void VIP::Judge()
 	VIP v;
 	pay c;
 	watcher w;
-	cout << "¨X¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨[\n";
-	cout << "¨U   »áÔ±µÇÂ¼ÇëÊäÈë£º1" << "                       ¨U\n";
-	cout << "¨U   »áÔ±×¢²áÇëÊäÈë£º2" << "                       ¨U\n";
-	cout << "¨U   ÓÎ¿ÍµÇÂ½ÇëÊäÈë£º3" << "                       ¨U\n";
-	cout << "¨U   ¹ÜÀíÔ±µÇÂ½ÇëÊäÈë£º4" << "                     ¨U\n";
-	cout << "¨U                                           ¨U\n";
-	cout << "¨^¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨T¨a\n";
+	cout << "â•”â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•—\n";
+	cout << "â•‘   ä¼šå‘˜ç™»å½•è¯·è¾“å…¥ï¼š1" << "                       â•‘\n";
+	cout << "â•‘   ä¼šå‘˜æ³¨å†Œè¯·è¾“å…¥ï¼š2" << "                       â•‘\n";
+	cout << "â•‘   æ¸¸å®¢ç™»é™†è¯·è¾“å…¥ï¼š3" << "                       â•‘\n";
+	cout << "â•‘   ç®¡ç†å‘˜ç™»é™†è¯·è¾“å…¥ï¼š4" << "                     â•‘\n";
+	cout << "â•‘                                           â•‘\n";
+	cout << "â•šâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•\n";
 	cin >> s1;
 	if (s1 == "1")
 	{
-		cout << "ÇëÊäÈë»áÔ±ĞÅÏ¢" << endl;
-		cout << "ÇëÄúÊäÈëÄúµÄÊÖ»úºÅ£º";
+		cout << "è¯·è¾“å…¥ä¼šå‘˜ä¿¡æ¯" << endl;
+		cout << "è¯·æ‚¨è¾“å…¥æ‚¨çš„æ‰‹æœºå·ï¼š";
 		cin >> v.Tel;
 		while (1)
 		{
 			if (v.Tel.length() == 11)
 			{
-				cout << "ÇëÊäÈëÄúµÄÃÜÂë£º";
+				cout << "è¯·è¾“å…¥æ‚¨çš„å¯†ç ï¼š";
 				cin >> v.Pw;
 				break;
 			}
 			else
 			{
-				cout << "ÄúÊäÈëµÄÊÖ»úºÅ²»ÊÇÊ®Ò»Î»£¡£¡£¡  ÇëÄúÖØĞÂÊäÈëÄúµÄÊÖ»úºÅ£º";
+				cout << "æ‚¨è¾“å…¥çš„æ‰‹æœºå·ä¸æ˜¯åä¸€ä½ï¼ï¼ï¼  è¯·æ‚¨é‡æ–°è¾“å…¥æ‚¨çš„æ‰‹æœºå·ï¼š";
 				cin >> v.Tel;
 			}
 		}
@@ -46,19 +45,19 @@ void VIP::Judge()
 	else
 		if (s1 == "2")
 		{
-			cout << "ÇëÊäÈëÄúÒª×¢²á»áÔ±µÄÊÖ»úºÅ£º";
+			cout << "è¯·è¾“å…¥æ‚¨è¦æ³¨å†Œä¼šå‘˜çš„æ‰‹æœºå·ï¼š";
 			cin >> v.Tel;
 			while (1)
 			{
 				if (v.Tel.length() == 11)
 				{
-					cout << "ÇëÊäÈëÄúµÄÃÜÂë£º";
+					cout << "è¯·è¾“å…¥æ‚¨çš„å¯†ç ï¼š";
 					cin >> v.Pw;
 					break;
 				}
 				else
 				{
-					cout << "ÄúÊäÈëµÄÊÖ»úºÅ²»ÊÇÊ®Ò»Î»£¡£¡£¡  ÇëÄúÖØĞÂÊäÈëÄúµÄÊÖ»úºÅ£º";
+					cout << "æ‚¨è¾“å…¥çš„æ‰‹æœºå·ä¸æ˜¯åä¸€ä½ï¼ï¼ï¼  è¯·æ‚¨é‡æ–°è¾“å…¥æ‚¨çš„æ‰‹æœºå·ï¼š";
 					cin >> v.Tel;
 				}
 			}
@@ -80,7 +79,7 @@ void VIP::Judge()
 bool VIP::compare(VIP v)
 {
 	string b1;
-	const string& fileName1 = "D:/»áÔ±ĞÅÏ¢.txt";
+	const string& fileName1 = "D:/ä¼šå‘˜ä¿¡æ¯.txt";
 	ifstream inf1(fileName1.c_str());
 	int count1 = 0;
 	while (getline(inf1, b1))
@@ -99,7 +98,7 @@ bool VIP::compare(VIP v)
 		}
 	}
 	string b2;
-	const string& fileName2 = "D:/»áÔ±ĞÅÏ¢.txt";
+	const string& fileName2 = "D:/ä¼šå‘˜ä¿¡æ¯.txt";
 	ifstream inf2(fileName2.c_str());
 	int count2 = 0;
 	while (getline(inf2, b2))
@@ -121,17 +120,17 @@ bool VIP::compare(VIP v)
 	{
 		if (count2 > 0)
 		{
-			cout << "¹§Ï²Äú£¡£¡£¡	µÇÂ½³É¹¦" << endl;
+			cout << "æ­å–œæ‚¨ï¼ï¼ï¼	ç™»é™†æˆåŠŸ" << endl;
 		}
 		else
 		{
-			cout << "ÃÜÂë´íÎó" << endl;
+			cout << "å¯†ç é”™è¯¯" << endl;
 			this->Judge();
 		}
 	}
 	else
 	{
-		cout << "¶Ô²»Æğ£¡£¡£¡		ĞÅÏ¢¿âÖĞÃ»ÓĞÄúµÄĞÅÏ¢" << endl;
+		cout << "å¯¹ä¸èµ·ï¼ï¼ï¼		ä¿¡æ¯åº“ä¸­æ²¡æœ‰æ‚¨çš„ä¿¡æ¯" << endl;
 		this->Judge();
 	}
 	return 1;
@@ -148,15 +147,15 @@ char* VIP::my_strstr(char* src, char* dest)
 		rsrc = fsrc;
 		while (*fsrc == *tdest && *fsrc != 0)
 		{
-			fsrc++;//±éÀúÔ´×Ö·û´®Ö¸Õë
-			tdest++;//¼ÇÂ¼ÏàÍ¬×Ö·û´®Ê×µØÖ·
+			fsrc++;//éå†æºå­—ç¬¦ä¸²æŒ‡é’ˆ
+			tdest++;//è®°å½•ç›¸åŒå­—ç¬¦ä¸²é¦–åœ°å€
 		}
-		//»Ø¹ö
+		//å›æ»š
 		if (*tdest == 0)
 		{
 			return rsrc;
 		}
-		tdest = dest;//Ä¿±ê×Ö·û´®¸üĞÂµ½ÆğÊ¼Î»ÖÃ
+		tdest = dest;//ç›®æ ‡å­—ç¬¦ä¸²æ›´æ–°åˆ°èµ·å§‹ä½ç½®
 		fsrc = rsrc;
 		fsrc++;
 	}
@@ -168,7 +167,7 @@ bool VIP::Store(VIP v)
 	int i = 0;
 	int value = 0;
 	srand((size_t)time(NULL));
-	FILE* fp = fopen("D:/»áÔ±ĞÅÏ¢.txt", "a+");
+	FILE* fp = fopen("D:/ä¼šå‘˜ä¿¡æ¯.txt", "a+");
 	if (!fp)
 	{
 		return -1;
@@ -178,9 +177,9 @@ bool VIP::Store(VIP v)
 	for (int j = 0; j < 1; j++)
 	{
 		memset(message, 0, sizeof(message));
-		sprintf(message, "%s:\t %s%s\t %s%s\n", "»áÔ±ĞÅÏ¢", "ÊÖ»úºÅÂë£º", v.Tel.c_str(), "ÃÜÂë£º", v.Pw.c_str());
+		sprintf(message, "%s:\t %s%s\t %s%s\n", "ä¼šå‘˜ä¿¡æ¯", "æ‰‹æœºå·ç ï¼š", v.Tel.c_str(), "å¯†ç ï¼š", v.Pw.c_str());
 		fputs(message, fp);
-		cout << "¹§Ï²Äú£¡£¡£¡		×¢²á³É¹¦" << endl;
+		cout << "æ­å–œæ‚¨ï¼ï¼ï¼		æ³¨å†ŒæˆåŠŸ" << endl;
 	}
 	delete[] message;
 	fclose(fp);
