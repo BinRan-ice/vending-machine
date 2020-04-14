@@ -1,19 +1,18 @@
 #include "machine.h"
-#pragma warning(disable:4996)
 #include <iostream>
 #include <string>
 #include <fstream>
 #include <ctime>
 using namespace std;
-Machine::Machine()		//×Ô¶¯··Âô»ú¹¹Ôìº¯ÊıÄ¬ÈÏ³õÊ¼»¯£ºĞÍºÅ£¬×´Ì¬£¬ËùÔÚµØ
+Machine::Machine()		//è‡ªåŠ¨è´©å–æœºæ„é€ å‡½æ•°é»˜è®¤åˆå§‹åŒ–ï¼šå‹å·ï¼ŒçŠ¶æ€ï¼Œæ‰€åœ¨åœ°
 {
 	number = 202000;
 	condition = " ";
-	place[0] = "Éè±¸ËùÔÚµØ£ºÁÉÄş ´óÁ¬";
-	place[1] = "Éè±¸ËùÔÚµØ£ºÁÉÄş ÉòÑô";
-	place[2] = "Éè±¸ËùÔÚµØ£ºÁÉÄş ³¯Ñô";
-	place[3] = "Éè±¸ËùÔÚµØ£ºÁÉÄş ÁÉÑô";
-	place[4] = "Éè±¸ËùÔÚµØ£ºÁÉÄş ºùÂ«µº";
+	place[0] = "è®¾å¤‡æ‰€åœ¨åœ°ï¼šè¾½å® å¤§è¿";
+	place[1] = "è®¾å¤‡æ‰€åœ¨åœ°ï¼šè¾½å® æ²ˆé˜³";
+	place[2] = "è®¾å¤‡æ‰€åœ¨åœ°ï¼šè¾½å® æœé˜³";
+	place[3] = "è®¾å¤‡æ‰€åœ¨åœ°ï¼šè¾½å® è¾½é˜³";
+	place[4] = "è®¾å¤‡æ‰€åœ¨åœ°ï¼šè¾½å® è‘«èŠ¦å²›";
 }
 
 bool Machine::produce()
@@ -22,7 +21,7 @@ bool Machine::produce()
 	int i = 0;
 	int value = 0;
 	srand((size_t)time(NULL));
-	FILE* fp = fopen("D:/ÊÛ»õ»úĞÅÏ¢.txt", "w");		//´´½¨Ò»¸öÎÄ¼şÖ¸ÕëÖ¸ÏòDÅÌÖĞµÄÎÄ¼ş
+	FILE* fp = fopen("D:/å”®è´§æœºä¿¡æ¯.txt", "w");		//åˆ›å»ºä¸€ä¸ªæ–‡ä»¶æŒ‡é’ˆæŒ‡å‘Dç›˜ä¸­çš„æ–‡ä»¶
 	if (!fp)
 	{
 		return -1;
@@ -35,16 +34,16 @@ bool Machine::produce()
 		value = rand() % 10;
 		if (value <= 8)
 		{
-			condition = "Éè±¸ÊôĞÔ£ºÕı³£";
+			condition = "è®¾å¤‡å±æ€§ï¼šæ­£å¸¸";
 		}
 		else
 		{
-			condition = "Éè±¸ÊôĞÔ£º¹ÊÕÏ";
+			condition = "è®¾å¤‡å±æ€§ï¼šæ•…éšœ";
 		}
 		i = rand() % 5;
-		memset(p, 0, sizeof(p));		//½«Ö¸ÕëpËùÖ¸ÏòµÄÄÚ´æÇå¿Õ
-		sprintf(p, "%s:%d\t %s\t %s\n", "Éè±¸ĞÍºÅ", number, condition.c_str(), place[i].c_str());	//½«×Ô¶¯··Âô»úµÄĞÅÏ¢¿½±´µ½pËùÖ¸ÏòµÄÄÚ´æµØÖ·
-		fputs(p, fp);		//½«pÖĞµÄĞÅÏ¢·ÅÈëÎÄ¼şÖ¸Õë
+		memset(p, 0, sizeof(p));		//å°†æŒ‡é’ˆpæ‰€æŒ‡å‘çš„å†…å­˜æ¸…ç©º
+		sprintf(p, "%s:%d\t %s\t %s\n", "è®¾å¤‡å‹å·", number, condition.c_str(), place[i].c_str());	//å°†è‡ªåŠ¨è´©å–æœºçš„ä¿¡æ¯æ‹·è´åˆ°pæ‰€æŒ‡å‘çš„å†…å­˜åœ°å€
+		fputs(p, fp);		//å°†pä¸­çš„ä¿¡æ¯æ”¾å…¥æ–‡ä»¶æŒ‡é’ˆ
 	}
 	delete[] p;
 	fclose(fp);
@@ -52,12 +51,12 @@ bool Machine::produce()
 
 string Machine::getRandLine(const string& fileName)
 {
-	ifstream inf(fileName.c_str());		//½«ÎÄ¼şÖĞµÄĞÅÏ¢×ª»¯Îªchar*ÀàĞÍµÄ×Ö·û´®
+	ifstream inf(fileName.c_str());		//å°†æ–‡ä»¶ä¸­çš„ä¿¡æ¯è½¬åŒ–ä¸ºchar*ç±»å‹çš„å­—ç¬¦ä¸²
 	string lineData;
 	int i = 1;
 	string tmpLine;
 	srand((unsigned int)time(NULL));
-	while (getline(inf, tmpLine))		//»ñÈ¡ÎÄ¼şÖĞÄ³Ò»ĞĞ×Ô¶¯··Âô»úµÄĞÅÏ¢
+	while (getline(inf, tmpLine))		//è·å–æ–‡ä»¶ä¸­æŸä¸€è¡Œè‡ªåŠ¨è´©å–æœºçš„ä¿¡æ¯
 	{
 		if (rand() % i == 0)
 			lineData = tmpLine;
@@ -67,11 +66,11 @@ string Machine::getRandLine(const string& fileName)
 	return lineData;
 }
 
-void Machine::gettime()		//»ñÈ¡ÏµÍ³µ±Ç°Ê±¼ä
+void Machine::gettime()		//è·å–ç³»ç»Ÿå½“å‰æ—¶é—´
 {
 	time_t t = time(0);
 	char tmp[64];
-	strftime(tmp, sizeof(tmp), "µ±Ç°ÈÕÆÚÎª£º%Y/%m/%d %X %A", localtime(&t));
+	strftime(tmp, sizeof(tmp), "å½“å‰æ—¥æœŸä¸ºï¼š%Y/%m/%d %X %A", localtime(&t));
 	puts(tmp);
 }
 
