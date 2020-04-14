@@ -8,11 +8,12 @@
 #include "machine.h"
 #include<string>
 using namespace std;
+
 int main()
 {
 	Machine m;
 	m.produce();
-	cout << m.getRandLine("D:/售货机信息.txt") << "\t";
+	cout << m.getRandLine("D:/脢脹禄玫禄煤脨脜脧垄.txt") << "\t";
 	m.gettime();
 	VIP v1;
 	v1.Judge();
