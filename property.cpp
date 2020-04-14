@@ -1,4 +1,4 @@
-#include "property.h"
+#include"property.h"
 #include"Class.h"
 #include<iostream>
 #include<string>
@@ -16,7 +16,7 @@ void Biscuit::buyb_2_T(int& a)
 	pay temp;
 	if (b2_number < a)
 	{
-		cout << "Ð¡Íõ×Ó¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "å°çŽ‹å­åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -28,7 +28,7 @@ void Biscuit::buyb_2_V(int& a)
 	pay temp;
 	if (b2_number < a)
 	{
-		cout << "Ð¡Íõ×Ó¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "å°çŽ‹å­åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -40,7 +40,7 @@ void Biscuit::buyb_1_T(int& a)
 	pay temp;
 	if (b1_number < a)
 	{
-		cout << "°ÂÀû°Â¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "å¥¥åˆ©å¥¥åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -52,7 +52,7 @@ void Biscuit::buyb_1_V(int& a)
 	pay temp;
 	if (b1_number < a)
 	{
-		cout << "°ÂÀû°Â¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "å¥¥åˆ©å¥¥åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -73,11 +73,11 @@ void Biscuit::checkdate()
 }
 void Biscuit::displayb_1()
 {
-	cout << "°ÂÀû°Â¿â´æ»¹ÓÐ" << b1_number << "ºÐ\n";
+	cout << "å¥¥åˆ©å¥¥åº“å­˜è¿˜æœ‰" << b1_number << "ç›’\n";
 }
 void Biscuit::displayb_2()
 {
-	cout << "Ð¡Íõ×Ó¿â´æ»¹ÓÐ" << b2_number << "ºÐ\n";
+	cout << "å°çŽ‹å­åº“å­˜è¿˜æœ‰" << b2_number << "ç›’\n";
 }
 void Snack::adds_1(int& a)
 {
@@ -96,7 +96,7 @@ void Snack::buys_1_T(int& a)
 	pay temp;
 	if (s1_number < a)
 	{
-		cout << "Ãæ°ü¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "é¢åŒ…åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -108,7 +108,7 @@ void Snack::buys_1_V(int& a)
 	pay temp;
 	if (s1_number < a)
 	{
-		cout << "Ãæ°ü¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "é¢åŒ…åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -120,7 +120,7 @@ void Snack::buys_2_V(int& a)
 	pay temp;
 	if (s2_number < a)
 	{
-		cout << "ÊíÆ¬¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "è–¯ç‰‡åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -132,7 +132,7 @@ void Snack::buys_2_T(int& a)
 	pay temp;
 	if (s2_number < a)
 	{
-		cout << "ÊíÆ¬¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "è–¯ç‰‡åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -144,7 +144,7 @@ void Snack::buys_3_T(int& a)
 	pay temp;
 	if (s3_number < a)
 	{
-		cout << "·½±ãÃæ¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "æ–¹ä¾¿é¢åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -156,7 +156,7 @@ void Snack::buys_3_V(int& a)
 	pay temp;
 	if (s3_number < a)
 	{
-		cout << "·½±ãÃæ¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "æ–¹ä¾¿é¢åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -169,22 +169,22 @@ void Snack::checkdate()
 }
 void Snack::displays_1()
 {
-	cout << "Ãæ°ü¿â´æ»¹ÓÐ" << s1_number << "ºÐ\n";
+	cout << "é¢åŒ…åº“å­˜è¿˜æœ‰" << s1_number << "ç›’\n";
 }
 void Snack::displays_2()
 {
-	cout << "ÊíÆ¬¿â´æ»¹ÓÐ" << s2_number << "ºÐ\n";
+	cout << "è–¯ç‰‡åº“å­˜è¿˜æœ‰" << s2_number << "ç›’\n";
 }
 void Snack::displays_3()
 {
-	cout << "·½±ãÃæ¿â´æ»¹ÓÐ" << s3_number << "ºÐ\n";
+	cout << "æ–¹ä¾¿é¢åº“å­˜è¿˜æœ‰" << s3_number << "ç›’\n";
 }
 void Drink::buyd_1_V(int& a)
 {
 	pay temp;
 	if (d1_number < a)
 	{
-		cout << "¿óÈªË®¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "çŸ¿æ³‰æ°´åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -196,7 +196,7 @@ void Drink::buyd_1_T(int& a)
 	pay temp;
 	if (d1_number < a)
 	{
-		cout << "¿óÈªË®¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "çŸ¿æ³‰æ°´åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -208,7 +208,7 @@ void Drink::buyd_2_T(int& a)
 	pay temp;
 	if (d2_number < a)
 	{
-		cout << "²èÒûÁÏ¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "èŒ¶é¥®æ–™åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -220,7 +220,7 @@ void Drink::buyd_2_V(int& a)
 	pay temp;
 	if (d2_number < a)
 	{
-		cout << "²èÒûÁÏ¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "èŒ¶é¥®æ–™åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -232,7 +232,7 @@ void Drink::buyd_3_T(int& a)
 	pay temp;
 	if (d3_number < a)
 	{
-		cout << "ÆûË®¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "æ±½æ°´åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_T();
 	}
 	else {
@@ -244,7 +244,7 @@ void Drink::buyd_3_V(int& a)
 	pay temp;
 	if (d3_number < a)
 	{
-		cout << "ÆûË®¿â´æ²»×ã,ÇëÖØÐÂ¹ºÂò" << endl;
+		cout << "æ±½æ°´åº“å­˜ä¸è¶³,è¯·é‡æ–°è´­ä¹°" << endl;
 		temp.choose_1_V();
 	}
 	else {
@@ -265,15 +265,15 @@ void Drink::addd_3(int& a)
 }
 void Drink::displayd_1()
 {
-	cout << "¿óÈªË®¿â´æ»¹ÓÐ" << d1_number << "ºÐ\n";
+	cout << "çŸ¿æ³‰æ°´åº“å­˜è¿˜æœ‰" << d1_number << "ç›’\n";
 }
 void Drink::displayd_2()
 {
-	cout << "²èÒûÁÏ¿â´æ»¹ÓÐ" << d2_number << "ºÐ\n";
+	cout << "èŒ¶é¥®æ–™åº“å­˜è¿˜æœ‰" << d2_number << "ç›’\n";
 }
 void Drink::displayd_3()
 {
-	cout << "ÆûË®¿â´æ»¹ÓÐ" << d3_number << "ºÐ\n";
+	cout << "æ±½æ°´åº“å­˜è¿˜æœ‰" << d3_number << "ç›’\n";
 }
 void Drink::checkdate()
 {
@@ -305,6 +305,6 @@ Drink::Drink(string Date, string tem, string kind, string name, double price) :P
 }
 void Drink::checktemp()
 {
-	cout << "ÎÂ¶ÈÎª" << this->tem << endl;
+	cout << "æ¸©åº¦ä¸º" << this->tem << endl;
 }
 
